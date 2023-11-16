@@ -12,12 +12,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import dagger.hilt.android.AndroidEntryPoint
 import uz.nakhmedov.xmtask.ui.initial.navigation.initialNavigationRoute
 import uz.nakhmedov.xmtask.ui.initial.navigation.initialScreen
 import uz.nakhmedov.xmtask.ui.initial.navigation.navigateToMain
 import uz.nakhmedov.xmtask.ui.main.navigation.mainScreen
 import uz.nakhmedov.xmtask.ui.theme.XMTaskTheme
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
